@@ -1,6 +1,31 @@
 <?php include 'include/navbar.html'; ?>
 <?php include 'db_config.php'; ?>
 
-    <h1 id="title" class="p-3 ms-4">Tarea 2</h1>
+    <h1 id="title" class="p-3 ms-4">Spotify'nt</h1>
+    <p style="text-align: center;">Bienvenido a Spotify'nt la mejor plataforma musical en donde (no) podras escuchar tus canciones favoritas de tus artistas favoritos, desarrollada por tres estudiantes con un total combinado de tres horas de sueño en las ultimas cuatros semanas
+    </p>
+    
+    <h1>Registrate aqui</h1>
+
+    <form action="register.php" method="post" target="_self">
+        <div>
+            <label for="nombre">Nombre</label>
+            <input type="text"name="nombre" placeholder="Ingresa tu nombre" id="nombre">
+        </div>
+        <div>
+            <label for="apellido">Apellido</label>
+            <input type="text"name="apellido" placeholder="Ingresa tu apellido" id="apellido">
+        </div>
+        <div>
+            <label for="email">email</label>
+            <input type="email"name="email" placeholder="Ingresa tu email" id="email">
+        </div>
+        <div>
+            <label for="password">password</label>
+            <input type="password"name="password" placeholder="Ingresa tu contraseña" id="password">
+        </div>
+        <input type="submit" value="Submit">
+    </form>
 </body>
 </html>
+
